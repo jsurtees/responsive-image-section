@@ -37,7 +37,7 @@ p {
   margin-bottom: 0;
 }
 
-.btn {
+a {
   color: #fff;
   text-decoration: none;
   background-color: #555;
@@ -57,7 +57,14 @@ img {
 }
 
 .img-flex {
+  display: block;
   margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.img {
+  padding: 0;
 }
 
 @media only screen and (min-width: 38em) {
@@ -65,6 +72,19 @@ img {
   html {
     font-size: 110%;
     line-height: 1.4;
+  }
+
+  section {
+    display: inline-block;
+    max-width: 48%;
+    vertical-align: middle;
+    padding-top: 1em;
+  }
+
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 2em;
   }
 
 }
@@ -76,6 +96,11 @@ img {
     line-height: 1.5;
   }
 
+  body {
+    max-width: 60%;
+    margin-left: 14em;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
@@ -83,6 +108,8 @@ img {
   html {
     font-size: 130%;
     line-height: 1.5;
+    text-align: center;
+    text-align: left;
   }
 
 }
